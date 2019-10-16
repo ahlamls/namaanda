@@ -26,8 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="Nama"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/btn"

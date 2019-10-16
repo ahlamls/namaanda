@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Create the intent to start another activity
                tv.setVisibility(View.VISIBLE);
-               tv.setText("Nama Anda Adalah " + tv.getText().toString());
+               tv.setText("Nama Anda Adalah " + et.getText().toString());
             }
         });
     }
