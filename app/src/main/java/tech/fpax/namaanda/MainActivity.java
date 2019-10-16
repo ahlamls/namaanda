@@ -12,13 +12,14 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     TextView tv;
     EditText et;
-    Button btn;
+    Button btn,btnrst;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         btn = findViewById(R.id.btn);
+        btnrst = findViewById(R.id.btnrst);
         tv = findViewById(R.id.tv);
         et = findViewById(R.id.et);
         btn.setOnClickListener(new View.OnClickListener(){
@@ -28,6 +29,15 @@ public class MainActivity extends AppCompatActivity {
                 //Create the intent to start another activity
                tv.setVisibility(View.VISIBLE);
                tv.setText("Nama Anda Adalah " + et.getText().toString());
+            }
+        });
+        btnrst.setOnClickListener(new View.OnClickListener(){
+            @Override
+            //On click function
+            public void onClick(View view) {
+                //Create the intent to start another activity
+                tv.setVisibility(View.GONE);
+               
             }
         });
     }
